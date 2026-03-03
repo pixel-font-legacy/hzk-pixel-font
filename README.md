@@ -1,11 +1,6 @@
 > [!WARNING]
-> 
-> 本字体并非公有领域，您在使用时，请务必谨慎考量并自负版权风险。
-> 
-> 如果您正在寻找可以免费商用的开源中文像素字体，请尝试以下项目：
 >
-> - [方舟像素字体](https://github.com/TakWolf/ark-pixel-font)
-> - [缝合像素字体](https://github.com/TakWolf/fusion-pixel-font)
+> 本字体并非公有领域，您在使用时，请务必谨慎考量并自负版权风险。
 
 # 汉字库像素字体 / HZK Pixel Font
 
