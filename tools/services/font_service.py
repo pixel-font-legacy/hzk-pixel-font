@@ -39,7 +39,6 @@ def _create_builder(font_config: FontConfig, glyph_sequence: list[GlyphFile], ch
     builder.meta_info.serif_style = SerifStyle.SERIF
     builder.meta_info.slant_style = SlantStyle.NORMAL
     builder.meta_info.width_style = WidthStyle.MONOSPACED
-    builder.meta_info.vendor_url = 'https://hzk-pixel-font.takwolf.com'
 
     for glyph_file in glyph_sequence:
         horizontal_offset_y = (font_config.ascent + font_config.descent - glyph_file.height) // 2
