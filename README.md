@@ -9,7 +9,7 @@
 
 # 汉字库像素字体 / HZK Pixel Font
 
-[![Releases](https://img.shields.io/github/v/release/TakWolf/hzk-pixel-font?style=flat-square)](https://github.com/TakWolf/hzk-pixel-font/releases)
+[![Releases](https://img.shields.io/github/v/release/pixel-font-legacy/hzk-pixel-font?style=flat-square)](https://github.com/pixel-font-legacy/hzk-pixel-font/releases)
 
 UCDOS 系统的点阵字体，字模来源于 [BitmapFont](https://github.com/aguegu/BitmapFont/tree/master/font)。
 
