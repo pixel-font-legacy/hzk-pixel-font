@@ -1,6 +1,6 @@
 import re
 import shutil
-import zipfile
+from zipfile import ZipFile
 
 from loguru import logger
 
@@ -13,7 +13,7 @@ def make_release_zips():
 
     for font_format in options.font_formats:
         file_path = path_define.releases_dir.joinpath(f'hzk-pixel-font-{font_format}-v{configs.version}.zip')
-        with zipfile.ZipFile(file_path, 'w') as file:
+        with ZipFile(file_path, 'w') as file:
             file.write(path_define.project_root_dir.joinpath('LICENSE-FONT.md'), 'README.md')
             for font_config in configs.font_configs:
                 font_file_name = f'hzk-pixel-{font_config.font_size}px.{font_format}'
