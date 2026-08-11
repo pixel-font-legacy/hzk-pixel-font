@@ -1,8 +1,8 @@
 from tools.configs.dump import DumpConfig
 from tools.configs.font import FontConfig
 
-version = '1.12.0'
-version_time = '2026-07-01'
+version = '1.13.0'
+version_time = '2026-08-11'
 
 dump_configs = [
     DumpConfig(
