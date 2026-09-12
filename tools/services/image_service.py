@@ -5,7 +5,7 @@ from tools.configs import FontConfig
 from tools.configs import path_define
 
 
-def make_preview_image(font_config: FontConfig):
+def make_preview_image(font_config: FontConfig) -> None:
     font = ImageFont.truetype(path_define.OUTPUTS_DIR.joinpath(f'hzk-pixel-{font_config.font_size}px.otf.woff2'), font_config.font_size)
     text_color = (0, 0, 0, 255)
 

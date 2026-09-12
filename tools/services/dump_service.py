@@ -22,7 +22,7 @@ def _parse_bitmap(bitmap_bytes: bytes, row_bytes_size: int, width: int, height: 
     return bitmap
 
 
-def dump_font(dump_config: DumpConfig):
+def dump_font(dump_config: DumpConfig) -> None:
     dump_dir = path_define.DUMP_DIR.joinpath(dump_config.font_name)
     dump_dir.mkdir(parents=True, exist_ok=True)
 

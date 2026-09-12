@@ -69,7 +69,7 @@ def _create_builder(font_config: FontConfig, glyph_sequence: list[GlyphFile], ch
     return builder
 
 
-def make_fonts(font_config: FontConfig, glyph_sequence: list[GlyphFile], character_mapping: dict[int, str]):
+def make_fonts(font_config: FontConfig, glyph_sequence: list[GlyphFile], character_mapping: dict[int, str]) -> None:
     path_define.OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
     builder = _create_builder(font_config, glyph_sequence, character_mapping)

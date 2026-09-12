@@ -15,7 +15,7 @@ class FontConfig:
             x_height: int,
             cap_height: int,
             source_names: list[str],
-    ):
+    ) -> None:
         self.font_size = font_size
         self.ascent = ascent
         self.descent = descent

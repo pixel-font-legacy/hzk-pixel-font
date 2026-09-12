@@ -8,7 +8,7 @@ from tools import configs
 from tools.configs import path_define, options
 
 
-def make_release_zips():
+def make_release_zips() -> None:
     path_define.RELEASES_DIR.mkdir(parents=True, exist_ok=True)
 
     for font_format in options.FONT_FORMATS:
@@ -21,7 +21,7 @@ def make_release_zips():
         logger.info("Make release zip: '{}'", file_path)
 
 
-def update_docs():
+def update_docs() -> None:
     path_define.DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
     regex_file_name = re.compile(r'^preview-.*px\.png$')
@@ -32,7 +32,7 @@ def update_docs():
         logger.info("Copy file: '{}' -> '{}'", path_from, path_to)
 
 
-def update_www():
+def update_www() -> None:
     if path_define.WWW_FONTS_DIR.exists():
         shutil.rmtree(path_define.WWW_FONTS_DIR)
     path_define.WWW_FONTS_DIR.mkdir(parents=True)
