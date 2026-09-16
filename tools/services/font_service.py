@@ -1,4 +1,5 @@
 import math
+from collections.abc import Mapping, Sequence
 from datetime import datetime
 
 from loguru import logger
@@ -21,7 +22,7 @@ def collect_glyph_files(font_config: FontConfig) -> tuple[list[GlyphFile], dict[
     return glyph_sequence, character_mapping
 
 
-def _create_builder(font_config: FontConfig, glyph_sequence: list[GlyphFile], character_mapping: dict[int, str]) -> FontBuilder:
+def _create_builder(font_config: FontConfig, glyph_sequence: Sequence[GlyphFile], character_mapping: Mapping[int, str]) -> FontBuilder:
     builder = FontBuilder()
     builder.font_metric.font_size = font_config.font_size
     builder.font_metric.horizontal_layout.ascent = font_config.ascent
@@ -69,7 +70,7 @@ def _create_builder(font_config: FontConfig, glyph_sequence: list[GlyphFile], ch
     return builder
 
 
-def make_fonts(font_config: FontConfig, glyph_sequence: list[GlyphFile], character_mapping: dict[int, str]) -> None:
+def make_fonts(font_config: FontConfig, glyph_sequence: Sequence[GlyphFile], character_mapping: Mapping[int, str]) -> None:
     path_define.OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
     builder = _create_builder(font_config, glyph_sequence, character_mapping)
