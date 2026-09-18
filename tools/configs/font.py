@@ -22,3 +22,7 @@ class FontConfig:
         self.x_height = x_height
         self.cap_height = cap_height
         self.source_names = source_names
+
+    @property
+    def baseline(self) -> int:
+        return (self.font_size + self.ascent + self.descent) // 2

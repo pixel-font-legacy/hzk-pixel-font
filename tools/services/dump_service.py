@@ -3,7 +3,7 @@ import math
 from character_encoding_utils import gb2312
 from character_encoding_utils.gb2312 import GB2312Exception
 from loguru import logger
-from pixel_font_knife.mono_bitmap import MonoBitmap
+from pixel_font_knife.bitmap.mono_bitmap import MonoBitmap
 
 from tools.configs import DumpConfig, path_define
 
